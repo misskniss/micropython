@@ -48,6 +48,7 @@ ifeq ($(MICROPY_FORCE_32BIT),1)
 # starting with linux-libc-dev:i386
 CFLAGS += -m32
 LDFLAGS += -m32
+#LDFLAGS:  -L/usr/local/opt/libffi/lib
 ifeq ($(MICROPY_PY_FFI),1)
 ifeq ($(UNAME_S),Linux)
 CFLAGS_MOD += -I/usr/include/i686-linux-gnu
